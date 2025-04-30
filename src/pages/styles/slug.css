@@ -1,0 +1,99 @@
+.__content_box_slug {
+    position: relative;
+    width: 100dvw;
+    height: 100dvh;
+    overflow-y: auto;
+    background-image: url('../../assets/img/bodegon-balanza-justicia_23-2149776027 (1).avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.__content_box_slug .__content_box_info {
+    width: 60%;
+    margin: auto;
+}
+
+.__content_box_slug .__content_box_info .__bg_profile {
+    width: 100%;
+    margin: 2rem 0rem;
+}
+
+.__content_box_slug .__content_box_info .__bg_profile .__avatar {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+}
+
+.__content_box_slug .__content_box_info .__bg_profile .__info {
+    text-align: center;
+    color: #181818;
+}
+
+.__content_box_slug .__content_box_info .__bg_profile .__info p {
+    font-size: .8rem;
+}
+
+.__content_box_slug .__content_box_info .__sec {
+    margin-bottom: 2rem;
+}
+
+.__content_box_slug .__content_box_info .__sec h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #181818;
+    margin-bottom: 1rem;
+}
+
+.__content_box_slug .__content_box_info .__sec .__list {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.__content_box_slug .__content_box_info .__sec .__list .__itm a {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    border-radius: 10px;
+    background-color: #181818;
+}
+
+.__content_box_slug .__content_box_info .__sec .__list_vert {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.__content_box_slug .__content_box_info .__sec .__list_vert li {
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #181818;
+}
+
+@media (max-width: 360px) {
+
+    .__content_box_slug {
+        background-position: -510px;
+    }
+    
+    .__content_box_slug .__content_box_info {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+    .__content_box_slug {
+        background-position: right;
+    }
+}
+

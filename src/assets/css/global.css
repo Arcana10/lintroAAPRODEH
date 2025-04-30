@@ -1,0 +1,59 @@
+:root {
+
+    --primary: #7728F3;
+    --white: #FFFFFF;
+    
+    --font-family: "Poppins", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--white);
+    font-family: var(--font-family);
+    background-color: var(--primary);
+}
+
+input, textarea, select {
+    border: none;
+    outline: none;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* HOME */
+
+#app {
+    display: grid;
+    width: 100dvw;
+    height: 100dvh;
+    place-items: center;
+}
