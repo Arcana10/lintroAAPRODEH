@@ -10,8 +10,6 @@ export default function SlugPage () {
     const { slug } = useParams();
 
     const info = users.find((u) => u.slug === slug);
-    console.log(info);
-    
 
     return (
         <>
@@ -22,7 +20,7 @@ export default function SlugPage () {
 
             <div className="__content_box_slug">
 
-                <Link to={'https://wa.me/send?phone=51966327426&text=Hola'}><IconBrandWhatsapp size={24} strokeWidth={1.2} /></Link>
+                <Link className="__wa_float" to={'https://wa.me/send?phone=51966327426&text=Hola'}><IconBrandWhatsapp size={28} strokeWidth={2} stroke={'#181818'} /></Link>
 
                 <div className="__content_box_info">
 

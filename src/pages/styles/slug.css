@@ -8,6 +8,22 @@
     background-repeat: no-repeat;
 }
 
+.__content_box_slug .__wa_float {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    display: grid;
+    width: 60px;
+    height: 60px;
+    place-items: center;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+}
+
+.__content_box_slug .__wa_float .tabler-icon {
+    stroke: #181818;
+}
+
 .__content_box_slug .__content_box_info {
     width: 60%;
     margin: auto;
