@@ -11,7 +11,7 @@ export default function HomePage () {
         <>
         
             <Helmet>
-                <title>Lintro</title>
+                <title>Lintro | Crea tu página en pocos click y date a conocer a tus clientes con un solo enlace.</title>
             </Helmet>
 
             <div className="__content_box">
