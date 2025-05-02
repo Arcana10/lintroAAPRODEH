@@ -80,7 +80,7 @@
 }
 
 .__content_box_slug .__content_box_info .__sec .__list_vert {
-    width: 40%;
+    width: 100%;
     margin: auto;
     display: flex;
     gap: 1rem;
@@ -98,7 +98,7 @@
 @media (max-width: 360px) {
 
     .__content_box_slug {
-        background-position: -510px;
+        background-position: -410px;
     }
     
     .__content_box_slug .__content_box_info {
@@ -111,5 +111,13 @@
     .__content_box_slug {
         background-position: right;
     }
+}
+
+@media (min-width: 1440px) {
+
+    .__content_box_slug .__content_box_info .__sec .__list_vert {
+        width: 40%;
+    }
+
 }
 
