@@ -43,12 +43,34 @@ export default function SlugPage () {
     return (
         <>
             <Helmet>
-                <title>{slug} | Lintro | Crea tu página en pocos click y date a conocer a tus clientes con un solo enlace.</title>
+                <meta name="description" content={`${slug} - ${info?.name} | Lintro es una página donde puedes crear sitios web de manera sencilla y rápida, hecha con amor por ARCANA CORP.`}/>
+                <meta name="keywords" content={`Lintro, crear páginas web, diseño rápido, páginas sencillas, ARCANA CORP, ${slug}, ${info?.name}, ${info?.fullname}, Jauja, Huancayo, Lima, Perú`}/>
+                <meta name="author" content="ARCANA CORP"/>
+                <meta name="robots" content="index, follow"/>
+                <link rel="canonical" href="https://www.lintro.arcana.codes"/>
+
+                <meta property="og:title" content={`${slug} | Lintro - Crea tu web fácil y rápido con ARCANA CORP`}/>
+                <meta property="og:description" content={`Lintro es una herramienta desarrollada por ARCANA CORP que permite crear páginas web rápida y fácilmente. Proyecto para ${slug}.`}/>
+                <meta property="og:type" content="website"/>
+                <meta property="og:url" content="https://www.lintro.arcana.codes"/>
+                <meta property="og:image" content="/og_image.png"/>
+
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:title" content={`${slug} | Lintro - Crea tu web con ARCANA CORP`}/>
+                <meta name="twitter:description" content={`Lintro permite crear sitios web sencillos en pocos pasos. Un desarrollo de ARCANA CORP para ${slug} - ${info?.fullname}.`}/>
+                <meta name="twitter:image" content="/og_twitter.png"/>
+
+                <meta name="geo.region" content="PE"/>
+                <meta name="geo.placename" content="Jauja, Huancayo, Lima"/>
+                <meta name="geo.position" content="-12.0695;-75.2025"/>
+                <meta name="ICBM" content="-12.0695, -75.2025"/>
+
+                <title>{slug} - {info?.fullname} | Lintro | Crea tu página en pocos click y date a conocer a tus clientes con un solo enlace.</title>
             </Helmet>
 
             <div className={`__content_box_slug ${modal && '__content_box_slug_hidden'}`}>
 
-                <Link className="__wa_float" to={'https://wa.me/send?phone=51908503474&text=Hola+AAPRODEH+nesito+su+ayuda'} target="_blank">
+                <Link className="__wa_float" to={`https://wa.me/send?phone=51${info?.phone}&text=Hola+${info?.name}+nesito+su+ayuda`} target="_blank">
                     <IconBrandWhatsapp size={28} strokeWidth={2} stroke={'#181818'} />
                 </Link>
 

@@ -9,6 +9,7 @@ export const users = [
         fullname: 'Asociación de Abogados Pro Derechos Humanos',
         avatar: avatarAAPRODEH,
         mail: 'aaprodeh@gmail.com',
+        phone: '908503474',
         contacts: [
             {
                 link: 'tel:+51908503474',
