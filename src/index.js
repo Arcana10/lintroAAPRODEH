@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import SlugPage from './pages/SlugPage';
 
 import './assets/css/global.css'
+import { UIProvider } from './context/UI/UIContext';
 
 const router = createBrowserRouter([
     {
@@ -31,7 +32,11 @@ root.render(
 
     <>
     
-        <RouterProvider router={router} />
+        <UIProvider>
+        
+            <RouterProvider router={router} />
+        
+        </UIProvider>
 
     </>
 

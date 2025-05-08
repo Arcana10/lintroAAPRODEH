@@ -20,6 +20,8 @@ html {
 }
 
 body {
+    width: 100dvw;
+    max-width: 100dvw;
     color: var(--white);
     font-family: var(--font-family);
     background-color: var(--primary);
