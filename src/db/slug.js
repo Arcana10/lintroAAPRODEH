@@ -1,4 +1,4 @@
-import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconLocation, IconMail, IconPhone } from "@tabler/icons-react";
+import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandTiktok, IconLocation, IconMail, IconPhone } from "@tabler/icons-react";
 
 import avatarAAPRODEH from '../assets/img/logo-AAPRODEH.png'
 import bannerAAPRODEH from '../assets/img/bodegon-balanza-justicia_23-2149776027 (1).avif'
@@ -92,22 +92,22 @@ export const users = [
                 icon: <IconPhone size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />
             },
             {
-                link: 'mailto:contacto@ferreteriacesar.pe',
-                icon: <IconMail size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />
-            },
-            {
-                link: 'https://maps.app.goo.gl/ubicacion-ferreteria-jauja',
+                link: 'https://goo.gl/maps/fqYv6wv3YKVXygct8',
                 icon: <IconLocation size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />
             }
         ],
         networks: [
             {
                 icon: <IconBrandFacebook size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />,
-                link: 'https://facebook.com/ferreteriajauja'
+                link: 'https://www.facebook.com/share/1AXNTv8qcr/'
             },
             {
                 icon: <IconBrandInstagram size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />,
                 link: 'https://instagram.com/ferreteriajauja'
+            },
+            {
+                icon: <IconBrandTiktok size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />,
+                link: 'https://www.tiktok.com/@cesarramosmolina1?_t=ZM-8wiSsDIuwXI&_r=1'
             }
         ],
         tit: 'Nuestros productos',
