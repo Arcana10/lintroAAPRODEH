@@ -1,10 +1,18 @@
 import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandTiktok, IconLocation, IconMail, IconPhone } from "@tabler/icons-react";
 
 import avatarAAPRODEH from '../assets/img/logo-AAPRODEH.png'
-import bannerAAPRODEH from '../assets/img/b1dff9d8-ab8f-4edb-b912-7b645c024ce5.jpeg'
+import bannerAAPRODEH from '../assets/img/bodegon-balanza-justicia_23-2149776027 (1).avif'
 
-import avatarFerreteriaJauja from '../assets/img/logo_miferreteria.webp'
+import avatarFerreteriaJauja from '../assets/img/b1dff9d8-ab8f-4edb-b912-7b645c024ce5.jpeg'
 import bannerFerreteria from '../assets/img/banner_miferreteria.avif'
+
+//CAROUSEL
+import carouselImage1 from '../assets/img/sliders/image_1.jpeg'
+import carouselImage2 from '../assets/img/sliders/image_2.jpeg'
+import carouselImage3 from '../assets/img/sliders/image_3.jpeg'
+import carouselImage4 from '../assets/img/sliders/image_4.jpeg'
+import carouselImage5 from '../assets/img/sliders/image_5.jpeg'
+import carouselImage6 from '../assets/img/sliders/image_6.jpeg'
 
 export const users = [
     {
@@ -123,6 +131,14 @@ export const users = [
             { txt: 'Venta de Piedra Chancada' },
             { txt: 'Venta de Hormigon' },
             { txt: 'Entregas a domicilio' }
+        ],
+        courusel: [
+            carouselImage1,
+            carouselImage2,
+            carouselImage3,
+            carouselImage4,
+            carouselImage5,
+            carouselImage6
         ]
     }    
 ]

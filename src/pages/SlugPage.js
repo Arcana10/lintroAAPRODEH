@@ -120,6 +120,21 @@ export default function SlugPage () {
                         </ul>
                     </section>
 
+                    {info?.courusel && (
+                        <section className="__sec">
+                            <h2>Imágenes</h2>
+                            <div className="__slider_container">
+                                <ul className="__slider_gallery">
+                                    {[...info.courusel, ...info.courusel].map((c, i) => (
+                                    <li key={i} className="__slider_card" style={{ backgroundImage: `url(${c})` }}>
+                                        <img src={c} alt={`Imagen de ${info.name}`} />
+                                    </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </section>
+                    ) }
+
                 </div>
 
                 {modal && (
