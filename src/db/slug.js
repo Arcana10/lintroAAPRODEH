@@ -1,7 +1,7 @@
 import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandTiktok, IconLocation, IconMail, IconPhone } from "@tabler/icons-react";
 
 import avatarAAPRODEH from '../assets/img/logo-AAPRODEH.png'
-import bannerAAPRODEH from '../assets/img/bodegon-balanza-justicia_23-2149776027 (1).avif'
+import bannerAAPRODEH from '../assets/img/b1dff9d8-ab8f-4edb-b912-7b645c024ce5.jpeg'
 
 import avatarFerreteriaJauja from '../assets/img/logo_miferreteria.webp'
 import bannerFerreteria from '../assets/img/banner_miferreteria.avif'
