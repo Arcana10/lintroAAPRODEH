@@ -116,6 +116,11 @@ export const users = [
             { txt: 'Herramientas eléctricas' },
             { txt: 'Ferretería en general' },
             { txt: 'Asesoría técnica' },
+            { txt: 'Alquiler de maquinarias para vaciado de Techos y Zapatas' },
+            { txt: 'Venta de Arena Fina' },
+            { txt: 'Venta de Arena Gruesa' },
+            { txt: 'Venta de Piedra Chancada' },
+            { txt: 'Venta de Hormigon' },
             { txt: 'Entregas a domicilio' }
         ]
     }    
