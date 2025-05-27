@@ -1,5 +1,10 @@
 import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconLocation, IconMail, IconPhone } from "@tabler/icons-react";
+
 import avatarAAPRODEH from '../assets/img/logo-AAPRODEH.png'
+import bannerAAPRODEH from '../assets/img/bodegon-balanza-justicia_23-2149776027 (1).avif'
+
+import avatarFerreteriaJauja from '../assets/img/logo_miferreteria.webp'
+import bannerFerreteria from '../assets/img/banner_miferreteria.avif'
 
 export const users = [
     {
@@ -8,8 +13,13 @@ export const users = [
         name: 'AAPRODEH',
         fullname: 'Asociación de Abogados Pro Derechos Humanos',
         avatar: avatarAAPRODEH,
+        banner: bannerAAPRODEH, // Aquí debes importar o asignar la imagen banner
         mail: 'aaprodeh@gmail.com',
         phone: '908503474',
+        colors: {
+            primary: '#181818',
+            accent: '#FFFFFF'
+        },
         contacts: [
             {
                 link: 'tel:+51908503474',
@@ -38,6 +48,7 @@ export const users = [
                 link: '',
             },
         ],
+        tit: 'Nuestras especialidades',
         services: [
             {
                 txt: 'Derecho Administrativo'
@@ -61,5 +72,51 @@ export const users = [
                 txt: 'Derecho Tributario'
             }
         ]
-    }
+    },
+    {
+        slug: 'miferreteria',
+        link: 'https://lintro.arcana.codes/ferreteria-jauja',
+        name: 'Ferretería Ensigna',
+        fullname: 'Ferretería Ensigna - Materiales y Herramientas',
+        avatar: avatarFerreteriaJauja, // Aquí debes importar o asignar la imagen logo
+        banner: bannerFerreteria, // Aquí debes importar o asignar la imagen banner
+        mail: 'contacto@ferreteriajauja.pe',
+        phone: '944123456',
+        colors: {
+            primary: '#ff7a28',
+            accent: '#FFFFFF'
+        },
+        contacts: [
+            {
+                link: 'tel:+51944123456',
+                icon: <IconPhone size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />
+            },
+            {
+                link: 'mailto:contacto@ferreteriajauja.pe',
+                icon: <IconMail size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />
+            },
+            {
+                link: 'https://maps.app.goo.gl/ubicacion-ferreteria-jauja',
+                icon: <IconLocation size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />
+            }
+        ],
+        networks: [
+            {
+                icon: <IconBrandFacebook size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />,
+                link: 'https://facebook.com/ferreteriajauja'
+            },
+            {
+                icon: <IconBrandInstagram size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />,
+                link: 'https://instagram.com/ferreteriajauja'
+            }
+        ],
+        tit: 'Nuestros productos',
+        services: [
+            { txt: 'Materiales de construcción' },
+            { txt: 'Herramientas eléctricas' },
+            { txt: 'Ferretería en general' },
+            { txt: 'Asesoría técnica' },
+            { txt: 'Entregas a domicilio' }
+        ]
+    }    
 ]

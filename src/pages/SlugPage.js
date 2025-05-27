@@ -68,7 +68,7 @@ export default function SlugPage () {
                 <title>{slug} - {info?.fullname} | Lintro | Crea tu página en pocos click y date a conocer a tus clientes con un solo enlace.</title>
             </Helmet>
 
-            <div className={`__content_box_slug ${modal && '__content_box_slug_hidden'}`}>
+            <div className={`__content_box_slug ${modal && '__content_box_slug_hidden'}`} style={{backgroundImage: `url(${info.banner})`, '--color-primary': info?.colors.primary, '--color-accent': info?.colors.accent }}>
 
                 <Link className="__wa_float" to={`https://api.whatsapp.com/send?phone=51${info?.phone}&text=Hola+*${info?.name}*+nesito+su+ayuda`} target="_blank">
                     <IconBrandWhatsapp size={28} strokeWidth={2} stroke={'#181818'} />
@@ -112,7 +112,7 @@ export default function SlugPage () {
                     </section>
 
                     <section className="__sec">
-                        <h2>Nuestras especialidades</h2>
+                        <h2>{info.tit}</h2>
                         <ul className="__list_vert">
                             {info.services.map((service, idx) => (
                                 <li key={idx}><span>{service.txt}</span></li>
