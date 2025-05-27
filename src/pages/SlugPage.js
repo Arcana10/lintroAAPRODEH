@@ -70,7 +70,7 @@ export default function SlugPage () {
 
             <div className={`__content_box_slug ${modal && '__content_box_slug_hidden'}`} style={{backgroundImage: `url(${info.banner})`, '--color-primary': info?.colors.primary, '--color-accent': info?.colors.accent }}>
 
-                <Link className="__wa_float" to={`https://api.whatsapp.com/send?phone=51${info?.phone}&text=Hola+*${info?.name}*+nesito+su+ayuda`} target="_blank">
+                <Link className="__wa_float" to={`https://api.whatsapp.com/send?phone=51${info?.phone}&text=Hola+*${info?.name}*+necesito+su+ayuda`} target="_blank">
                     <IconBrandWhatsapp size={28} strokeWidth={2} stroke={'#181818'} />
                 </Link>
 
