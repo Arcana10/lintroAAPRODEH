@@ -74,25 +74,25 @@ export const users = [
         ]
     },
     {
-        slug: 'miferreteria',
-        link: 'https://lintro.arcana.codes/ferreteria-jauja',
-        name: 'Ferretería Ensigna',
-        fullname: 'Ferretería Ensigna - Materiales y Herramientas',
+        slug: 'Ferreteria-Cesar',
+        link: 'https://lintro.arcana.codes/Ferreteria-Cesar',
+        name: 'Ferretería Cesar',
+        fullname: 'Ferretería Cesar - Materiales y Herramientas',
         avatar: avatarFerreteriaJauja, // Aquí debes importar o asignar la imagen logo
         banner: bannerFerreteria, // Aquí debes importar o asignar la imagen banner
-        mail: 'contacto@ferreteriajauja.pe',
-        phone: '944123456',
+        mail: 'contacto@ferreteriacesar.pe',
+        phone: '925228081',
         colors: {
             primary: '#ff7a28',
             accent: '#FFFFFF'
         },
         contacts: [
             {
-                link: 'tel:+51944123456',
+                link: 'tel:+51925228081',
                 icon: <IconPhone size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />
             },
             {
-                link: 'mailto:contacto@ferreteriajauja.pe',
+                link: 'mailto:contacto@ferreteriacesar.pe',
                 icon: <IconMail size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />
             },
             {
