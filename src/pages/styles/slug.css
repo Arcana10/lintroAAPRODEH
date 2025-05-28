@@ -3,7 +3,6 @@
     width: 100dvw;
     height: 100dvh;
     overflow-y: auto;
-    background-image: url('../../assets/img/bodegon-balanza-justicia_23-2149776027 (1).avif');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -13,8 +12,19 @@
     overflow-y: hidden;
 }
 
+.__overlay_linear {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, .8);
+}
+
 .__content_box_slug .__wa_float {
     position: fixed;
+    z-index: 1;
     right: 60px;
     bottom: 60px;
     display: grid;
@@ -72,8 +82,12 @@
     color: #181818;
 }
 
+.__content_box_slug .__content_box_info .__bg_profile .__info h1 {
+    color: var(--color-accent);
+}
 .__content_box_slug .__content_box_info .__bg_profile .__info p {
     font-size: .8rem;
+    color: var(--color-accent);
 }
 
 .__content_box_slug .__content_box_info .__sec {
@@ -83,7 +97,7 @@
 .__content_box_slug .__content_box_info .__sec h2 {
     text-align: center;
     font-size: 1.2rem;
-    color: #181818;
+    color: var(--color-accent);
     margin-bottom: 1rem;
 }
 
@@ -118,6 +132,22 @@
     border-radius: 10px;
     padding: 15px;
     background-color: var(--color-primary);
+}
+
+.__grid_providers {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.__grid_provider {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .__slider_container {
@@ -177,12 +207,23 @@
     .__content_box_slug {
         background-position: right;
     }
+    .__grid_providers {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 1440px) {
 
     .__content_box_slug .__content_box_info .__sec .__list_vert {
         width: 40%;
+    }
+
+    .__grid_providers {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
 }

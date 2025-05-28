@@ -69,7 +69,7 @@ export default function SlugPage () {
             </Helmet>
 
             <div className={`__content_box_slug ${modal && '__content_box_slug_hidden'}`} style={{backgroundImage: `url(${info.banner})`, '--color-primary': info?.colors.primary, '--color-accent': info?.colors.accent }}>
-
+                <div className="__overlay_linear"></div>
                 <Link className="__wa_float" to={`https://api.whatsapp.com/send?phone=51${info?.phone}&text=Hola+*${info?.name}*+necesito+su+ayuda`} target="_blank">
                     <IconBrandWhatsapp size={28} strokeWidth={2} stroke={'#181818'} />
                 </Link>
@@ -85,7 +85,7 @@ export default function SlugPage () {
                         </div>
                         <div className="__info">
                             <h1>{info.name}</h1>
-                            <p>{info.fullname}</p>
+                            <p>{info.fullname || info.description}</p>
                         </div>
                     </section>
                     
@@ -120,6 +120,19 @@ export default function SlugPage () {
                         </ul>
                     </section>
 
+                    {info?.providers && (
+                        <section className="__sec">
+                            <h2>Nuestros Proveedores</h2>
+                            <ul className="__grid_providers">
+                                {info?.providers.map((p, i) => (
+                                    <li key={i} className="__grid_provider" style={{backgroundImage: `url(${p})`}}>
+                                        <img src={p} alt={`Proveedores de cemento de ${info?.name}`} style={{display: "none"}} />
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
+
                     {info?.courusel && (
                         <section className="__sec">
                             <h2>Imágenes</h2>
@@ -133,7 +146,8 @@ export default function SlugPage () {
                                 </ul>
                             </div>
                         </section>
-                    ) }
+                    )}
+
 
                 </div>
 

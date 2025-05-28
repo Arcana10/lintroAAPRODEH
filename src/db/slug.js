@@ -1,10 +1,10 @@
 import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandTiktok, IconLocation, IconMail, IconPhone } from "@tabler/icons-react";
 
 import avatarAAPRODEH from '../assets/img/logo-AAPRODEH.png'
-import bannerAAPRODEH from '../assets/img/bodegon-balanza-justicia_23-2149776027 (1).avif'
+import bannerAAPRODEH from '../assets/img/banner-AAPRODEH.avif'
 
-import avatarFerreteriaJauja from '../assets/img/b1dff9d8-ab8f-4edb-b912-7b645c024ce5.jpeg'
-import bannerFerreteria from '../assets/img/banner_miferreteria.avif'
+import avatarFerreteriaJauja from '../assets/img/logo-ferreteria.png'
+import bannerFerreteria from '../assets/img/banner-ferreteria.png'
 
 //CAROUSEL
 import carouselImage1 from '../assets/img/sliders/image_1.jpeg'
@@ -13,6 +13,12 @@ import carouselImage3 from '../assets/img/sliders/image_3.jpeg'
 import carouselImage4 from '../assets/img/sliders/image_4.jpeg'
 import carouselImage5 from '../assets/img/sliders/image_5.jpeg'
 import carouselImage6 from '../assets/img/sliders/image_6.jpeg'
+
+//PROVIDERS
+import provider1 from '../assets/img/CEMENTO_ANDINO.png'
+import provider2 from '../assets/img/CEMENTO_APU.png'
+import provider3 from '../assets/img/CEMENTO_CEMEX.png'
+import provider4 from '../assets/img/CEMENTO_INKA.png'
 
 export const users = [
     {
@@ -85,7 +91,8 @@ export const users = [
         slug: 'Ferreteria-Cesar',
         link: 'https://lintro.arcana.codes/Ferreteria-Cesar',
         name: 'Ferretería Cesar',
-        fullname: 'Ferretería Cesar - Materiales y Herramientas',
+        fullname: '',
+        description: 'VENTA DE MATERIALES DE CONSTRUCCION, AGREGADOS(ARENA, FINA,GRUESA,PIEDRA CHANCADA,HORMIGÓN) Y ALQUILER DE MAQUINARIAS PARA VACEADOS DE TECHOS Y ZAPATAS "TODOS LOS MATERIALES PUESTO EN OBRA"',
         avatar: avatarFerreteriaJauja, // Aquí debes importar o asignar la imagen logo
         banner: bannerFerreteria, // Aquí debes importar o asignar la imagen banner
         mail: 'contacto@ferreteriacesar.pe',
@@ -110,10 +117,6 @@ export const users = [
                 link: 'https://www.facebook.com/share/1AXNTv8qcr/'
             },
             {
-                icon: <IconBrandInstagram size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />,
-                link: 'https://instagram.com/ferreteriajauja'
-            },
-            {
                 icon: <IconBrandTiktok size={24} strokeWidth={1.2} stroke={'#FFFFFF'} />,
                 link: 'https://www.tiktok.com/@cesarramosmolina1?_t=ZM-8wiSsDIuwXI&_r=1'
             }
@@ -132,6 +135,7 @@ export const users = [
             { txt: 'Venta de Hormigon' },
             { txt: 'Entregas a domicilio' }
         ],
+        providers: [provider1, provider2, provider3, provider4],
         courusel: [
             carouselImage1,
             carouselImage2,
