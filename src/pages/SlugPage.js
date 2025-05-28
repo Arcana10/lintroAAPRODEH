@@ -123,13 +123,15 @@ export default function SlugPage () {
                     {info?.providers && (
                         <section className="__sec">
                             <h2>Nuestros Proveedores</h2>
-                            <ul className="__grid_providers">
-                                {info?.providers.map((p, i) => (
-                                    <li key={i} className="__grid_provider" style={{backgroundImage: `url(${p})`}}>
-                                        <img src={p} alt={`Proveedores de cemento de ${info?.name}`} style={{display: "none"}} />
-                                    </li>
-                                ))}
-                            </ul>
+                            <div className="__slider_container">
+                                <ul className="__slider_gallery">
+                                    {info?.providers.map((p, i) => (
+                                        <li key={i} className="__slider_card" style={{backgroundImage: `url(${p})`}}>
+                                            <img src={p} alt={`Proveedores de cemento de ${info?.name}`} style={{display: "none"}} />
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </section>
                     )}
 
@@ -139,9 +141,9 @@ export default function SlugPage () {
                             <div className="__slider_container">
                                 <ul className="__slider_gallery">
                                     {[...info.courusel, ...info.courusel].map((c, i) => (
-                                    <li key={i} className="__slider_card" style={{ backgroundImage: `url(${c})` }}>
-                                        <img src={c} alt={`Imagen de ${info.name}`} />
-                                    </li>
+                                        <li key={i} className="__slider_card" style={{ backgroundImage: `url(${c})` }}>
+                                            <img src={c} alt={`Imagen de ${info.name}`} />
+                                        </li>
                                     ))}
                                 </ul>
                             </div>

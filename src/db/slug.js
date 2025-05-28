@@ -15,10 +15,22 @@ import carouselImage5 from '../assets/img/sliders/image_5.jpeg'
 import carouselImage6 from '../assets/img/sliders/image_6.jpeg'
 
 //PROVIDERS
-import provider1 from '../assets/img/CEMENTO_ANDINO.png'
-import provider2 from '../assets/img/CEMENTO_APU.png'
-import provider3 from '../assets/img/CEMENTO_CEMEX.png'
-import provider4 from '../assets/img/CEMENTO_INKA.png'
+import provider1 from '../assets/img/providers/img1.jpeg'
+import provider2 from '../assets/img/providers/img2.jpeg'
+import provider3 from '../assets/img/providers/img3.jpeg'
+import provider4 from '../assets/img/providers/img4.jpeg'
+import provider5 from '../assets/img/providers/img5.jpeg'
+import provider6 from '../assets/img/providers/img6.jpeg'
+import provider7 from '../assets/img/providers/img7.jpeg'
+import provider8 from '../assets/img/providers/img8.jpeg'
+import provider9 from '../assets/img/providers/img9.jpeg'
+import provider10 from '../assets/img/providers/img10.jpeg'
+import provider11 from '../assets/img/providers/img11.jpeg'
+import provider12 from '../assets/img/providers/img12.jpeg'
+import provider13 from '../assets/img/providers/img13.png'
+import provider14 from '../assets/img/providers/img14.png'
+import provider15 from '../assets/img/providers/img15.png'
+import provider16 from '../assets/img/providers/img16.png'
 
 export const users = [
     {
@@ -133,7 +145,7 @@ export const users = [
             { type: 'default', txt: 'Servicio de carga' },
             { type: 'primary', txt: 'Entregas a domicilio' }
         ],
-        providers: [provider1, provider2, provider3, provider4],
+        providers: [provider1, provider2, provider3, provider4, provider5, provider6, provider7, provider8, provider9, provider10, provider11, provider12, provider13, provider14, provider15, provider16],
         courusel: [
             carouselImage1,
             carouselImage2,
