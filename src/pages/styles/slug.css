@@ -134,6 +134,10 @@
     background-color: var(--color-primary);
 }
 
+.__content_box_slug .__content_box_info .__sec .__list_vert .itm-primary {
+    background-color: var(--color-accent);
+}
+
 .__grid_providers {
     width: 100%;
     display: grid;

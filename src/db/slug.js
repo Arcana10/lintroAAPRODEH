@@ -4,7 +4,7 @@ import avatarAAPRODEH from '../assets/img/logo-AAPRODEH.png'
 import bannerAAPRODEH from '../assets/img/banner-AAPRODEH.avif'
 
 import avatarFerreteriaJauja from '../assets/img/logo-ferreteria.png'
-import bannerFerreteria from '../assets/img/banner-ferreteria.png'
+import bannerFerreteria from '../assets/img/banner-ferreteria.jpg'
 
 //CAROUSEL
 import carouselImage1 from '../assets/img/sliders/image_1.jpeg'
@@ -99,7 +99,7 @@ export const users = [
         phone: '925228081',
         colors: {
             primary: '#ff7a28',
-            accent: '#FFFFFF'
+            accent: '#181818'
         },
         contacts: [
             {
@@ -123,17 +123,15 @@ export const users = [
         ],
         tit: 'Nuestros productos',
         services: [
-            { txt: 'Materiales de construcción' },
-            { txt: 'Herramientas eléctricas' },
-            { txt: 'Ferretería en general' },
-            { txt: 'Asesoría técnica' },
-            { txt: 'Servicio de Carga' },
-            { txt: 'Alquiler de maquinarias para vaciado de Techos y Zapatas' },
-            { txt: 'Venta de Arena Fina' },
-            { txt: 'Venta de Arena Gruesa' },
-            { txt: 'Venta de Piedra Chancada' },
-            { txt: 'Venta de Hormigon' },
-            { txt: 'Entregas a domicilio' }
+            { type: 'default', txt: 'Cementos: ANDINO, APU, INKA, CEMEX' },
+            { type: 'default', txt: 'Fierros: Sider Perú, Aceros Arequipa y Macho' },
+            { type: 'default', txt: 'Alambres N° 16, 8 y Clavos' },
+            { type: 'default', txt: 'Ladrillos de 18 huecos, Bloquetas y Panderetas' },
+            { type: 'default', txt: 'Tubos: Pavcos, Vinovit y Nicoll' },
+            { type: 'default', txt: 'Venta de Arena: Fina, Gruesa, Pierdra chancada, hormigon y confitillado' },
+            { type: 'default', txt: 'Alquiler de maquinarias para vaciado de techos y zapatos (Mezadora, wincha y trompito)' },
+            { type: 'default', txt: 'Servicio de carga' },
+            { type: 'primary', txt: 'Entregas a domicilio' }
         ],
         providers: [provider1, provider2, provider3, provider4],
         courusel: [

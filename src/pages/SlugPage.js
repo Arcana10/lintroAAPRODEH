@@ -114,8 +114,8 @@ export default function SlugPage () {
                     <section className="__sec">
                         <h2>{info.tit}</h2>
                         <ul className="__list_vert">
-                            {info.services.map((service, idx) => (
-                                <li key={idx}><span>{service.txt}</span></li>
+                            {info?.services.map((service, idx) => (
+                                <li key={idx} className={`itm-${service.type}`}><span>{service.txt}</span></li>
                             ))}
                         </ul>
                     </section>
