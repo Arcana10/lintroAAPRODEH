@@ -1,4 +1,3 @@
-import React from 'react'
 import ReactDOM from'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -8,6 +7,8 @@ import SlugPage from './pages/SlugPage';
 
 import './assets/css/global.css'
 import { UIProvider } from './context/UI/UIContext';
+import EditPage from './pages/EditPage';
+import { DBProvider } from './context/DB/DBContext';
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: '/:slug',
                 element: <SlugPage/>
+            },
+            {
+                path: '/:slug/edit',
+                element: <EditPage/>
             }
         ]
     }
@@ -33,8 +38,12 @@ root.render(
     <>
     
         <UIProvider>
+
+            <DBProvider>
         
-            <RouterProvider router={router} />
+                <RouterProvider router={router} />
+            
+            </DBProvider>
         
         </UIProvider>
 

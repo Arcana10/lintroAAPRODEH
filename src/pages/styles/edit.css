@@ -1,0 +1,120 @@
+.__box_edit {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    color: #000000;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.__box_edit .__tabs {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.__box_edit .__tabs .__tab {
+    width: 100%;
+    height: 50px;
+}
+
+.__box_edit .__tabs .__tab button {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    gap: 1rem;
+    background: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.__box_edit .__tabs .__tab--active button {
+    font-weight: bold;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.__box_edit .__body {
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.__box_edit .__body .__form {
+    width: 100%;
+}
+
+.__box_edit .__body .__form .__form_flex {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.__box_edit .__body .__form .__form_group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.__box_edit .__body .__form .__form_group label {
+    font-size: .8rem;
+    margin-bottom: .8rem;
+    display: inline-block;
+}
+
+.__box_edit .__body .__form .__form_group .__form_control {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+}
+
+.__box_edit .__body .__form .__form_group .__form_control input {
+    width: 100%;
+    height: inherit;
+    background: none;
+    padding-left: 1rem;
+    padding-right: 60px;
+}
+
+.__box_edit .__body .__form .__form_group .__form_control button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    background: none;
+    place-items: center;
+}
+
+.__box_edit .__body .__form .__form_group .__form_control button .__loading {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}} 
+
+.__box_edit .__body .__form .__form_group .__form_control button .tabler-icon {
+    stroke-width: 1.2;
+}
+
+@media (min-width: 768px) {
+    .__box_edit {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .__box_edit {
+        width: 40%;
+    }
+}

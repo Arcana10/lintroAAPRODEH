@@ -1,31 +1,42 @@
 import { Helmet } from "react-helmet";
-import { users } from "../db/slug";
 import { Link, useParams } from "react-router-dom";
-import { IconBrandWhatsapp, IconShare2 } from "@tabler/icons-react";
+import { IconBrandWhatsapp, IconMail, IconMapPin, IconPhone, IconShare2 } from "@tabler/icons-react";
 import { useState, useEffect } from "react";
 
 import './styles/slug.css'
 import { useUI } from "../context/UI/UIContext";
 import Modal from "../components/Modals/Modal";
+import { serviceGetSlug } from "../services/slug.service";
+import { useDB } from "../context/DB/DBContext";
+import { Toaster } from "sonner";
 
 export default function SlugPage () {
     
     const { slug } = useParams();
 
     const { modal, toogleModal } = useUI();
+    const { info, savedInfo } = useDB();
 
-    const [info, setInfo] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchData = () => {
-            const found = users.find((u) => u.slug === slug);
-            setInfo(found);
-            setLoading(false);
-        }
+    const socials = {
+        'mail': <IconMail size={24} strokeWidth={1.2} stroke={'#FFFFFF'}/>,
+        'phone': <IconPhone size={24} strokeWidth={1.2} stroke={'#FFFFFF'}/>,
+        'location': <IconMapPin size={24} strokeWidth={1.2} stroke={'#FFFFFF'}/>
+    }
 
-        // Simulamos un pequeño retraso (puedes quitarlo si quieres)
-        setTimeout(fetchData, 500);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const found = await serviceGetSlug(slug)
+                savedInfo(found.info)
+            } catch (error) {
+                console.error(error);
+            } finally {
+                setLoading(false)
+            }
+        }
+        fetchData();
     }, [slug]);
 
     if (loading) {
@@ -94,7 +105,7 @@ export default function SlugPage () {
                         <ul className="__list">
                             {info.contacts.map((c, index) => (
                                 <li key={index} className="__itm">
-                                    <Link to={c.link} target="_blank">{c.icon}</Link>
+                                    <Link to={c.link} target="_blank">{socials[c.icon]}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -158,6 +169,8 @@ export default function SlugPage () {
                 )}
 
             </div>
+
+            <Toaster position="top-center" richColors />
         </>
     )
 }
