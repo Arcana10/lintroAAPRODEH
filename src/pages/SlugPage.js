@@ -37,7 +37,7 @@ export default function SlugPage () {
             }
         }
         fetchData();
-    }, [slug]);
+    }, [slug, savedInfo]);
 
     if (loading) {
         return (
